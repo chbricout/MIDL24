@@ -1,0 +1,3 @@
+/fastsurfer/run_fastsurfer.sh --vox_size 1 --sd /output/sub-AMPSCZ-BI02450 --sid sub-BI02450_ses-202304111_rec-norm_run-1_T1w --t1 /data/sub-BI02450/ses-202304111/anat/sub-BI02450_ses-202304111_rec-norm_run-1_T1w.nii.gz --seg_only
+Fri, 22 Dec 2023 14:39:44 -0500
+2.2.0+9f37d02

@@ -1,0 +1,3 @@
+/fastsurfer/run_fastsurfer.sh --vox_size 1 --sd /output/sub-HCPEP-1035 --sid sub-1035_ses-1_T1w --t1 /data/rawdata/sub-1035/ses-1/anat/sub-1035_ses-1_T1w.nii.gz --seg_only
+Thu, 18 Jan 2024 13:17:05 -0500
+2.2.0+9f37d02

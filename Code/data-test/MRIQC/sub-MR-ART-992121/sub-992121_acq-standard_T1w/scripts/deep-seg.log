@@ -1,0 +1,54 @@
+Version: 2.2.0+9f37d02
+Log file for segmentation FastSurferCNN/run_prediction.py
+Fri Jan  5 17:18:11 EST 2024
+
+python-s /fastsurfer/FastSurferCNN/run_prediction.py --t1 /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz --asegdkt_segfile /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig.mgz --brainmask_name /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/mask.mgz --aseg_name /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aseg.auto_noCCseg.mgz --sid sub-992121_acq-standard_T1w --seg_log /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/scripts/deep-seg.log --vox_size 1 --batch_size 1 --viewagg_device auto --device auto 
+[INFO: run_prediction.py:  546]: Checking or downloading default checkpoints ...
+[INFO: common.py:  111]: Using device: cuda
+[INFO: common.py:  111]: Using viewagg_device: cuda
+[INFO: run_prediction.py:  234]: Running view aggregation on cuda
+[INFO: inference.py:  200]: Loading checkpoint /fastsurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /fastsurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /fastsurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: common.py:  820]: Single subject with absolute file path for input.
+[INFO: common.py:  833]: No subjects directory specified, but the parent directory of the output file /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aparc.DKTatlas+aseg.deep.mgz is 'mri', so we are assuming this is the 'mri' folder in the subject directory.
+[INFO: common.py:  875]: Analyzing single subject /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz
+[INFO: common.py:  970]: Output will be stored in Subjects Directory: /output/sub-MR-ART-992121
+[INFO: run_prediction.py:  310]: Successfully loaded image from /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz.
+[INFO: run_prediction.py:  418]: Output image directory 001.mgz does not exist. Creating it now...
+[INFO: run_prediction.py:  430]: Successfully saved image   as /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig/001.mgz.
+[INFO: run_prediction.py:  323]: Conforming image
+[INFO: run_prediction.py:  430]: Successfully saved image   as /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig.mgz.
+[INFO: run_prediction.py:  381]: Run coronal prediction
+[INFO: dataset.py:   76]: Loading Coronal with input voxelsize (1.0, 1.0)
+[INFO: inference.py:  352]: Inference on 256 batches for coronal successful
+[INFO: inference.py:  414]: Coronal inference on /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz finished in 8.7096 seconds
+[INFO: run_prediction.py:  381]: Run sagittal prediction
+[INFO: dataset.py:   67]: Loading Sagittal with input voxelsize (1.0, 1.0)
+[INFO: inference.py:  352]: Inference on 256 batches for sagittal successful
+[INFO: inference.py:  414]: Sagittal inference on /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz finished in 3.4517 seconds
+[INFO: run_prediction.py:  381]: Run axial prediction
+[INFO: dataset.py:   72]: Loading Axial with input voxelsize (1.0, 1.0)
+[INFO: inference.py:  352]: Inference on 256 batches for axial successful
+[INFO: inference.py:  414]: Axial inference on /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz finished in 2.1660 seconds
+[INFO: run_prediction.py:  430]: Successfully saved image   as /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aparc.DKTatlas+aseg.deep.mgz.
+[INFO: run_prediction.py:  584]: Creating brainmask based on segmentation...
+[INFO: run_prediction.py:  430]: Successfully saved image   as /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/mask.mgz.
+[INFO: run_prediction.py:  601]: Creating aseg based on segmentation...
+[INFO: run_prediction.py:  430]: Successfully saved image   as /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aseg.auto_noCCseg.mgz.
+[INFO: run_prediction.py:  618]: Running volume-based QC check on segmentation...
+INFO: Running N4 bias-field correction
+python-s /fastsurfer/recon_surf/N4_bias_correct.py --in /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig.mgz --rescale /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig_nu.mgz --aseg /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aparc.DKTatlas+aseg.deep.mgz --threads 1
+python-s /fastsurfer/FastSurferCNN/segstats.py --segfile /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aparc.DKTatlas+aseg.deep.mgz --segstatsfile /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/stats/aseg+DKT.stats --normfile /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig_nu.mgz  --empty --excludeid 0 --ids 2 4 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 43 44 46 47 49 50 51 52 53 54 58 60 63 77 251 252 253 254 255 1002 1003 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1034 1035 2002 2003 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2034 2035 --lut /fastsurfer/FastSurferCNN/config/FreeSurferColorLUT.txt --threads 1 
+Partial volume stats for 100 labels written to /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/stats/aseg+DKT.stats.
+Calculation took 7.02 seconds using up to 1 threads.
+python-s /fastsurfer/CerebNet/run_prediction.py --t1 /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz --asegdkt_segfile /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig.mgz --cereb_segfile /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/cerebellum.CerebNet.nii.gz --seg_log /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/scripts/deep-seg.log --batch_size 1 --viewagg_device auto --device auto --async_io --threads 1 --norm_name /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/orig_nu.mgz --cereb_statsfile /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/stats/cerebellum.CerebNet.stats 
+[INFO: run_prediction.py:  123]: Checking or downloading default checkpoints ...
+[INFO: common.py:  820]: Single subject with absolute file path for input.
+[INFO: common.py:  833]: No subjects directory specified, but the parent directory of the output file /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/cerebellum.CerebNet.nii.gz is 'mri', so we are assuming this is the 'mri' folder in the subject directory.
+[INFO: common.py:  875]: Analyzing single subject /data/sub-992121/anat/sub-992121_acq-standard_T1w.nii.gz
+[INFO: common.py:  111]: Using device: cuda
+[INFO: common.py:  111]: Using viewagg_device: cuda
+[INFO: inference.py:  401]: 24-01-05_17:21:32
+[INFO: inference.py:  330]: Saving CerebNet cerebellum segmentation at /output/sub-MR-ART-992121/sub-992121_acq-standard_T1w/mri/cerebellum.CerebNet.nii.gz
+[INFO: inference.py:  475]: Subject 1/1 with id 'sub-992121_acq-standard_T1w' processed in 4.99 sec.

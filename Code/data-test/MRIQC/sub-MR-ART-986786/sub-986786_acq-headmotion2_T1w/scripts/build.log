@@ -1,0 +1,3 @@
+/fastsurfer/run_fastsurfer.sh --vox_size 1 --sd /output/sub-MR-ART-986786 --sid sub-986786_acq-headmotion2_T1w --t1 /data/sub-986786/anat/sub-986786_acq-headmotion2_T1w.nii.gz --seg_only
+Fri, 22 Dec 2023 14:53:48 -0500
+2.2.0+9f37d02

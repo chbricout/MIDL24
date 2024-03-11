@@ -1,0 +1,79 @@
+<mxfile host="Electron" modified="2024-03-07T13:49:34.828Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.11 Chrome/114.0.5735.289 Electron/25.9.8 Safari/537.36" etag="EmOxr1pz6h4QF6S6vfm6" version="22.1.11" type="device">
+  <diagram name="Page-1" id="gr6je7v8TFipSfjQXhmd">
+    <mxGraphModel dx="1183" dy="685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jeQzfx0401GEN-antpjd-1" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="39.999999999999986" y="310" width="720" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-2" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=100;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="-146.25" y="146.25" width="400" height="107.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-44" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=45;shadow=0;fillColor=#e1d5e7;strokeColor=#9673a6;direction=east;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="-45.62" y="179.38" width="260" height="78.75" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-54" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=45;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="15" y="167.31" width="250" height="96.15" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-14" value="64 x 40 x 48 x 40" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="36.000000000000014" y="350" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-16" value="256 x 20 x 24 x 20" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="160" y="302" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-17" value="512x 10 x 12 x 10" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="249" y="284" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-15" value="128&amp;nbsp;x 40 x 48 x 40" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="95.75" y="332" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-21" value="" style="group" parent="jeQzfx0401GEN-antpjd-1" vertex="1" connectable="0">
+          <mxGeometry x="410" y="-35" width="290" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-22" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=9;" parent="jeQzfx0401GEN-antpjd-21" vertex="1">
+          <mxGeometry x="-110" y="25" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-23" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=10;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="jeQzfx0401GEN-antpjd-21" vertex="1">
+          <mxGeometry x="-80" y="25" width="31.65" height="51.41" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-24" value="ResBlock, 5x5, 3 units, PReLU + BatchNorm&lt;br&gt;Stride 2, Padding 2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-21" vertex="1">
+          <mxGeometry x="-31.35" y="35.7" width="241.35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-25" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=10;shadow=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="jeQzfx0401GEN-antpjd-21" vertex="1">
+          <mxGeometry x="-80" y="111.45000000000005" width="31.65" height="51.41" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-26" value="Conv 3D 5x5, stride 1, padding 2&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;PReLU + Batch Norm" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-21" vertex="1">
+          <mxGeometry x="-31.35" y="122.15" width="241.35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-29" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=10;shadow=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="jeQzfx0401GEN-antpjd-21" vertex="1">
+          <mxGeometry x="-80" y="69.30000000000001" width="31.65" height="51.41" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-30" value="Conv 3D 5x5, stride 4, padding 0&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;PReLU + Batch Norm" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-21" vertex="1">
+          <mxGeometry x="-31.35" y="80" width="241.35" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-46" value="1024x 5 x 6 x 5" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="334" y="256.75" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-53" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=25;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="117.03" y="171.03" width="190" height="87.69" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-52" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=25;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="222.61" y="171.14" width="150" height="88.47" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-20" value="3&amp;nbsp;x 5 x 6 x 5" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="450" y="256.75" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-50" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=25;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="364" y="144.38" width="90" height="148.75" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-49" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.15;darkOpacity2=0.05;rotation=90;size=25;shadow=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="jeQzfx0401GEN-antpjd-1" vertex="1">
+          <mxGeometry x="465" y="198.62" width="90" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jeQzfx0401GEN-antpjd-13" value="1 x 160 x 192 x 160" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="35" y="703" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
