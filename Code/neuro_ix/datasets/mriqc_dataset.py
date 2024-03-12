@@ -143,10 +143,61 @@ class MIDLMRArtDataset(MRIQCDataset):
     def __init__(self, root_dir: str, score_path:str=None):
         super().__init__(root_dir,score_path)
         with open("neuro_ix/datasets/midl", "rb") as data_file:
-             self.train_set, self.test_set = pickle.load( data_file)
+             self.train_set, self.val_set, self.test_set = pickle.load( data_file)
 
     
-    def get_images_path(self):
+    def get_train_path(self):
         path = list(map(lambda x : os.path.join(self.root_dir, x), self.train_set))
         path.sort()
         return path
+    
+    def get_test_path(self):
+        path = list(map(lambda x : os.path.join(self.root_dir, x), self.test_set))
+        path.sort()
+        return path
+    
+    def get_val_path(self):
+        path = list(map(lambda x : os.path.join(self.root_dir, x), self.val_set))
+        path.sort()
+        return path
+    
+class MIDLAMPSCZDataset(MRIQCDataset):
+    def __init__(self, root_dir: str, score_path:str=None, motion_score_path:str=None):
+        super().__init__(root_dir,score_path)
+        self.motion_score_df = pd.read_csv(
+           motion_score_path, sep=",", index_col=0
+        )
+        self.motion_score = FileBasedQCScore(
+            self.motion_score_df, "bids_name", "motion_mag", self.get_score_id
+        )
+        self.motion_label = FileBasedQCScore(
+            self.motion_score_df, "bids_name", "motion", self.get_score_id
+        )
+    
+    def get_images_path(self, modality: MRIModality, qc_issue=None):
+        path= glob.glob(
+            os.path.join(self.rawdata_dir,"sub-AMPSCZ-*", self.get_filename_template(modality))
+        )
+        logging.info("we got the paths, start filtering")
+        if not qc_issue is None:
+            if qc_issue == True:
+                path = list(filter(lambda x:self.get_score_id(x) in self.with_qc, path))
+            elif qc_issue == False:
+                excluded =  list(filter(lambda x:self.get_score_id(x) in self.with_qc, path))
+                path = list(set(path).difference(excluded))
+        logging.info("filtered!")
+        path.sort()
+
+        return path
+
+    @classmethod
+    def narval(cls):
+        return cls("/home/cbricout/scratch", score_path="data-test/MRIQC/derivatives/scores.csv", motion_score_path="data-test/AMPSCZ/rawdata/derivatives/motion_scores.csv")
+
+    @classmethod
+    def test(cls):
+        return cls("data-test", motion_score_path="data-test/AMPSCZ/rawdata/derivatives/motion_scores.csv")
+
+    @classmethod
+    def lab(cls):
+        return cls("/home/at70870/narval/scratch",  score_path="data-test/MRIQC/derivatives/scores.csv", motion_score_path="data-test/AMPSCZ/rawdata/derivatives/motion_scores.csv")

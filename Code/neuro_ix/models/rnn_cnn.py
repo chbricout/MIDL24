@@ -118,7 +118,7 @@ class RNNCNN(lightning.LightningModule):
                 spatial_dims=3,
                 in_channels=in_channel,
                 out_channels=64,
-                kernel_size=5,
+                kernel_size=4,
                 strides=4,
                 norm="BATCH",
                 padding=0,
@@ -165,7 +165,7 @@ class RNNCNN(lightning.LightningModule):
             self.lr = self.lr*self.beta ## mimick the scaled loss in the learning rate
 
         self.classifier = nn.Sequential(
-            # nn.Dropout(p=0.2),
+            nn.Dropout(p=0.2),
 
             nn.Linear(self.latent_size, 450),
             nn.BatchNorm1d(self.latent_size, affine=False),

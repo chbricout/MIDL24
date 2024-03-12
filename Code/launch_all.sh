@@ -1,3 +1,6 @@
+
+dos2unix trainer/*
+
 sbatch trainer/baseline.slurm
 sbatch trainer/baseline_no_decoder.slurm
 

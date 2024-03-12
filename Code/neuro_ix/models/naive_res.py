@@ -159,7 +159,7 @@ class RNNCNN(lightning.LightningModule):
             self.lr = self.lr*self.beta ## mimick the scaled loss in the learning rate
 
         self.classifier = nn.Sequential(
-            # nn.Dropout(p=0.2),
+            nn.Dropout(p=0.2),
 
             nn.Linear(self.latent_size, 450),
             nn.BatchNorm1d(self.latent_size, affine=False),

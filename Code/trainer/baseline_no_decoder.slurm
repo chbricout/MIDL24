@@ -2,9 +2,9 @@
 #SBATCH --job-name=baseline-nodec
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=60G
+#SBATCH --mem=40G
 #SBATCH --gpus-per-node=1
-#SBATCH --time=30:00:00
+#SBATCH --time=10:00:00
 #SBATCH --account=rrg-ebrahimi
 #SBATCH --mail-user=bricout.charles@outlook.com
 #SBATCH --mail-type=ALL
@@ -21,6 +21,6 @@ export MKL_NUM_THREADS=1
 # Activate bowl virtual environment
 source ~/bowl/bin/activate
 
-srun python trainer/baseline_trainer.py --raw_images  --max_epochs 1000 --learning_rate 1e-6 --batch_train 16
+srun python trainer/baseline_trainer.py --raw_images  --max_epochs 1000 --learning_rate 1e-5 --batch_train 20
 # Deactivate the virtual environment
 deactivate

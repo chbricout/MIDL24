@@ -69,10 +69,7 @@ class VAETrainConfig:
 
         # Define datasets
         self.main_dataset = MRIQCDataset.test() if is_test else MIDLMRArtDataset.narval()
-        if is_test:
-            self.test_frac = 0.5
-        else:
-            self.test_frac = 0.2
+      
 
         logging.info("asking for images")
         if is_test:
@@ -80,26 +77,23 @@ class VAETrainConfig:
                 modality=self.modality,
                 qc_issue=False if exclude_qc else None,
             )
+            subjects=set(map(lambda x:self.main_dataset.get_subject_id(x), paths))
+            train_subjects, val_subjects = train_test_split(list(subjects), test_size = 0.5)
+            self.train_path = list(filter(lambda x : self.main_dataset.get_subject_id(x) in train_subjects, paths))
+            self.val_path = list(filter(lambda x : self.main_dataset.get_subject_id(x) in val_subjects, paths))
         else:
-            paths = self.main_dataset.get_images_path()
+            self.train_path = self.main_dataset.get_train_path()
+            self.val_path = self.main_dataset.get_val_path()
+            print(f"split : {len(self.train_path)} / {len(self.val_path)}")
 
-        # paths=  list(filter(lambda x: self.main_dataset.get_dataset(x)=="MR-ART", paths))
 
-
-        # paths=  list(filter(lambda x : self.main_dataset.get_score_id(x) in self.main_dataset.has_qc, paths))
-        subjects=set(map(lambda x:self.main_dataset.get_subject_id(x), paths))
-        self.train_subjects, self.val_subjects = train_test_split(list(subjects), test_size = self.test_frac)
-        scores = list(map(lambda x: int(self.main_dataset.dataset_score(x))-1, paths))
-        self.train_path = list(filter(lambda x : self.main_dataset.get_subject_id(x) in self.train_subjects, paths))
+       
         self.train_scores = list(map(lambda x: int(self.main_dataset.dataset_score(x))-1, self.train_path))
-        self.val_path = list(filter(lambda x : self.main_dataset.get_subject_id(x) in self.val_subjects, paths))
         self.val_scores = list(map(lambda x: int(self.main_dataset.dataset_score(x))-1, self.val_path))
 
 
 
 
-        logging.info(f"sorted train : {self.train_subjects}")
-        logging.info(f"sorted val : {self.val_subjects}")
         logging.info(f"score val : {self.val_scores}")
 
 

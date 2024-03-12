@@ -1,6 +1,7 @@
 import os
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from monai.networks.blocks import Convolution, ResidualUnit
 from torchvision.transforms import RandomErasing
 import lightning
@@ -18,14 +19,12 @@ class ConvModule(nn.Module):
         resunit=3,
         padding=None,
         act="PRELU",
-        
     ):
         super().__init__()
         self.key = f"{in_channel}-{out_channel}"
         if padding == None:
             padding = conv_kernel // 2
 
-      
         self.conv_in = ResidualUnit(
             3,
             in_channels=in_channel,
@@ -34,7 +33,8 @@ class ConvModule(nn.Module):
             subunits=resunit,
             norm="BATCH",
             act=act,
-            strides=stride
+            strides=stride,
+            padding=padding,
         )
 
     def forward(self, x):
@@ -57,7 +57,6 @@ class DeConvModule(nn.Module):
         if padding == None:
             padding = conv_kernel // 2
 
-       
         self.deconv_in = Convolution(
             spatial_dims=3,
             in_channels=in_channel,
@@ -86,14 +85,61 @@ class DeConvModule(nn.Module):
         return y
 
 
-def linear_scheduler(epoch_max, begin, end):
-    def sched(epoch):
-        return begin + (epoch/epoch_max )*(end-begin)
-    return sched
+class ResEncoderDense(nn.Module):
+    def __init__(
+        self,
+        in_channel=1,
+        kernel_size=5,
+        act="PRELU",
+    ):
+        super().__init__()
+
+        self.input = Convolution(
+            spatial_dims=3,
+            in_channels=in_channel,
+            out_channels=32,
+            kernel_size=4,
+            strides=4,
+            norm="BATCH",
+            padding=0,
+        )
+
+        self.stage1 = ConvModule(kernel_size, 32, 64, 1, act=act, resunit=3)
+        self.skip1 = Convolution(3, 1, 64, kernel_size=4, strides=4, padding=0, act=None, norm=None)
+
+        self.stage2 = ConvModule(kernel_size, 128, 128, 2, act=act, resunit=3)
+        self.skip2 = Convolution(3, 1, 128, kernel_size=8, strides=8, padding=0, act=None, norm=None)
+
+        self.stage3 = ConvModule(kernel_size, 256, 256, 2, act=act, resunit=3)
+        self.skip3 = Convolution(3, 1, 256, kernel_size=16, strides=16, padding=0, act=None, norm=None)
+
+        self.stage4 = ConvModule(kernel_size, 512, 512, 2, act=act, resunit=3)
+
+        self.out = Convolution(
+            3,
+            512,
+            3,
+            kernel_size=kernel_size,
+            padding=kernel_size // 2,
+            norm="BATCH",
+        )
+
+    def forward(self, x):
+        inp = self.input(x)
+        stage1 = self.stage1(inp)
+        skip1 = self.skip1(x)
+        stage2 = self.stage2(torch.cat([stage1, skip1], dim=1))
+        skip2 = self.skip2(x)
+
+        stage3 = self.stage3(torch.cat([stage2, skip2], dim=1))
+        skip3 = self.skip3(x)
+        stage4 = self.stage4(torch.cat([stage3, skip3], dim=1))
+
+        return self.out(stage4)
 
 
 class RNNCNN(lightning.LightningModule):
-    
+
     def __init__(
         self,
         in_channel,
@@ -103,7 +149,7 @@ class RNNCNN(lightning.LightningModule):
         run_name="",
         lr=1e-4,
         beta=0.1,
-        use_decoder=True
+        use_decoder=True,
     ):
         super().__init__()
 
@@ -113,39 +159,13 @@ class RNNCNN(lightning.LightningModule):
         self.use_decoder = use_decoder
         self.run_name = run_name
 
-        self.encoder = nn.Sequential(
-            Convolution(
-                spatial_dims=3,
-                in_channels=in_channel,
-                out_channels=64,
-                kernel_size=5,
-                strides=4,
-                norm="BATCH",
-                padding=0,
-            ),
-            ConvModule(kernel_size, 64, 128, 1, act=act, resunit=3),
-
-            ConvModule(kernel_size, 128, 256, 2, act=act, resunit=3),
-
-            ConvModule(kernel_size, 256, 512, 2, act=act, resunit=3),
-
-            ConvModule(kernel_size, 512, 1024,  2, act=act, resunit=3),
-            Convolution(
-                3,
-                1024,
-                3,
-                kernel_size=kernel_size,
-                padding=kernel_size // 2,
-                norm="BATCH",
-            ),
-        )
-
+        self.encoder = ResEncoderDense(1, kernel_size, act)
         self.im_shape = im_shape
-        shape_like = (1, *im_shape) 
+        shape_like = (1, *im_shape)
         self.out_encoder = self.encoder(torch.empty(shape_like))
         self.latent_size = self.out_encoder.numel()
         print(self.latent_size)
-        if self.use_decoder :
+        if self.use_decoder:
             self.decoder = nn.Sequential(
                 Convolution(
                     3,
@@ -161,12 +181,13 @@ class RNNCNN(lightning.LightningModule):
                 DeConvModule(kernel_size, 64, 32, act=act),
                 DeConvModule(kernel_size, 32, in_channel, act=act),
             )
-        else :
-            self.lr = self.lr*self.beta ## mimick the scaled loss in the learning rate
+        else:
+            self.lr = (
+                self.lr * self.beta
+            )  ## mimick the scaled loss in the learning rate
 
         self.classifier = nn.Sequential(
             nn.Dropout(p=0.2),
-
             nn.Linear(self.latent_size, 450),
             nn.BatchNorm1d(self.latent_size, affine=False),
             nn.Dropout(p=0.5),
@@ -179,9 +200,7 @@ class RNNCNN(lightning.LightningModule):
             nn.BatchNorm1d(128, affine=False),
             nn.Dropout(p=0.5),
             nn.PReLU(),
-
-            nn.Linear(128, 1),
-            nn.ReLU()
+            nn.Linear(128, 3),
         )
 
         self.recon_to_plot = None
@@ -203,9 +222,9 @@ class RNNCNN(lightning.LightningModule):
 
     def forward(self, x):
         z = self.encode_forward(x)
-        if self.use_decoder :
+        if self.use_decoder:
             recon = self.decode_forward(z)
-        else :
+        else:
             recon = x
         classe = self.classify_emb(z)
         return [recon, z, classe]
@@ -214,17 +233,15 @@ class RNNCNN(lightning.LightningModule):
         volume, label = batch
         recon_batch, emb, classe = self.forward(volume)
         # LOSS COMPUTE
-        classe= classe.flatten()
-        label=label.float()
 
         if self.use_decoder:
             recon_loss = torch.nn.functional.mse_loss(recon_batch, volume)
-            label_loss = torch.nn.functional.mse_loss(classe, label)
-            model_loss_tot = recon_loss  + self.beta * label_loss
+            label_loss = torch.nn.functional.cross_entropy(classe, label)
+            model_loss_tot = recon_loss + self.beta * label_loss
             self.log("train_recon_loss", recon_loss)
-        else: 
-            label_loss = torch.nn.functional.mse_loss(classe, label)
-            model_loss_tot =  label_loss
+        else:
+            label_loss = torch.nn.functional.cross_entropy(classe, label)
+            model_loss_tot = label_loss
         self.log("train_loss", model_loss_tot)
         self.log("train_label_loss", label_loss)
 
@@ -236,24 +253,22 @@ class RNNCNN(lightning.LightningModule):
         volume, label = batch
         recon_batch, emb, classe = self.forward(volume)
         # LOSS COMPUTE
-        classe= classe.flatten()
-        label=label.float()
 
         if self.use_decoder:
             recon_loss = torch.nn.functional.mse_loss(recon_batch, volume)
-            label_loss = torch.nn.functional.mse_loss(classe, label)
-            model_loss_tot = recon_loss  + self.beta * label_loss
+            label_loss = torch.nn.functional.cross_entropy(classe, label)
+            model_loss_tot = recon_loss + self.beta * label_loss
             self.log("val_recon_loss", recon_loss)
         else:
-            label_loss = torch.nn.functional.mse_loss(classe, label)
-            model_loss_tot =  label_loss
+            label_loss = torch.nn.functional.cross_entropy(classe, label)
+            model_loss_tot = label_loss
         self.log("val_loss", model_loss_tot)
         self.log("val_label_loss", label_loss)
 
         self.recon_to_plot = recon_batch[0][0].cpu()
         self.test_to_plot = volume[0][0].cpu()
-        self.label += label.int().cpu().tolist()
-        self.classe += torch.round(classe.cpu(), decimals=0).int().tolist()
+        self.label += label.cpu().tolist()
+        self.classe += classe.cpu().tolist()
         return model_loss_tot
 
     def on_validation_epoch_end(self) -> None:
@@ -262,7 +277,7 @@ class RNNCNN(lightning.LightningModule):
         )
         classe = torch.Tensor(self.classe)
         lab = torch.Tensor(self.label)
-        accuracy = (classe == lab).sum() / (lab.numel())
+        accuracy = (classe.argmax(dim=1) == lab).sum() / (lab.numel())
         self.label = []
         self.classe = []
         self.log("val_accuracy", accuracy.mean())

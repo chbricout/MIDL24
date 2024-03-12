@@ -159,6 +159,7 @@ class BaselineModel(lightning.LightningModule):
 
         self.label=[]
         self.classe=[]
+        
 
     def encode_forward(self, input):
         z =self.encoder(input)

@@ -1,0 +1,762 @@
+,bids_name,qc_issue,score,T1w comment,motion,motion_mag
+0,sub-BI02450/ses-202306231,True,2,"severe ringing, ghosting at eyes, motion",True,2
+1,sub-BI02450/ses-202304111,False,3,ringing throughout,True,1
+3,sub-BI05529/ses-202306051,False,4,no notable issues,False,0
+5,sub-BI05652/ses-202304171,False,3,some ringing/motion in temporal poles,True,1
+7,sub-BI05874/ses-202305181,False,3,Some ringing,True,1
+10,sub-BI07844/ses-202305241,False,4,No notable issues,False,0
+11,sub-BI08676/ses-202306141,False,4,Negligible ringing,True,1
+12,sub-BI11459/ses-202307271,False,3,mild ringing,True,1
+13,sub-BI11621/ses-202308231,False,3,Noticable motion and ringing,True,1
+18,sub-BM13122/ses-202308041,False,4,"a bit grainy, otherwise fine",False,0
+20,sub-BM44608/ses-202305111,False,3,minor ghosting and ringing,True,1
+21,sub-BM44608/ses-202307181,False,4,,False,0
+22,sub-BM60731/ses-202303081,False,3,notable ringing,True,1
+23,sub-BM60731/ses-202211171,False,4,No notable issues,False,0
+24,sub-BM73097/ses-202303031,False,3,some ringing ,True,1
+25,sub-BM73097/ses-202305172,False,3,moderate ringing and ghosting of eyes,True,1
+26,sub-BM73314/ses-202308311,False,3,ringing,True,1
+31,sub-BM89694/ses-202304261,False,4,"slight vertical ghosting of eyes, doesn't affect brain",False,0
+32,sub-BM89694/ses-202307061,False,4,no notable issues,False,0
+33,sub-BM90491/ses-202301301,False,3,slight ringing,True,1
+34,sub-BM90491/ses-202304171,False,3,Minor ringing,True,1
+35,sub-BM97411/ses-202308081,False,3,moderate ringing,True,1
+37,sub-BM97794/ses-202305241,False,4,no notable issues,False,0
+38,sub-BM97794/ses-202308011,False,4,minor ringing in superficial slices,True,1
+39,sub-BM99192/ses-202301311,False,3,Minor ringing,True,1
+40,sub-BM99192/ses-202304191,False,4,,False,0
+41,sub-CA00152/ses-202301041,False,3,"persistent ringing, weird unfilled space in cerebellar region",True,1
+42,sub-CA00152/ses-202303091,False,3,ringing,True,1
+43,sub-CA00229/ses-202302102,False,3,moderate ringing,True,1
+45,sub-CA01089/ses-202303311,False,3,ghosting at eyes that clips brain a bit,False,0
+46,sub-CA01089/ses-202301271,False,4,,False,0
+47,sub-CA03409/ses-202302031,False,3,"motion/blurriness, not super great resolution",True,1
+48,sub-CA04081/ses-202304131,False,3,minor rining through back of the head,False,0
+49,sub-CA04081/ses-202308151,False,3,significant ringing and motion,True,1
+50,sub-CA04203/ses-202304191,False,4,no notable issues,False,0
+51,sub-CA04203/ses-202306151,False,4,nothing to note,False,0
+52,sub-CA05435/ses-202306161,False,4,"negligible ringing: top of brain, saggital view",True,1
+53,sub-CA06223/ses-202302171,False,3,some ringing,True,1
+55,sub-CA06239/ses-202306281,False,3,Some ringing and blurriness,True,1
+57,sub-CA07055/ses-202303171,False,3,slight ringing,True,1
+59,sub-CA09370/ses-202303271,False,3,mild ringing,True,1
+60,sub-CA09370/ses-202305261,False,3,a bit of cerebral atrophy,False,0
+61,sub-CA10161/ses-202304141,False,4,no notable issues,False,0
+62,sub-CA10361/ses-202305161,False,4,temporal pole cyst,False,0
+64,sub-CA12220/ses-202308181,False,3,ringing and motion,True,1
+65,sub-CA12220/ses-202306091,False,4,nothing to note,False,0
+66,sub-CA13246/ses-202306291,False,4,no notable issues,False,0
+68,sub-CA13329/ses-202307061,False,4,no notable issues,False,0
+70,sub-CA14206/ses-202307251,False,3,"a bit grainy, slight ringing",True,1
+73,sub-CA16121/ses-202307271,False,3,ringing,True,1
+79,sub-CM01633/ses-202301272,False,3,"potential incidental finding in back of brain not seen in T2w plus small hole in the cerebellum, some ringing",True,1
+81,sub-CM02398/ses-202303031,False,3,Notable ringing,True,1
+82,sub-CM02398/ses-202306201,False,3,"moderate ringing, ghosting of eyes clips brain negligibly ",True,1
+83,sub-CM02493/ses-202304131,False,4,No notable issues,False,0
+84,sub-CM02821/ses-202301263,False,4,No notable issues,False,0
+87,sub-CM04396/ses-202304191,False,3,ringing,True,1
+88,sub-CM04902/ses-202305041,False,4,negligible ringing,True,1
+90,sub-CM05540/ses-202305031,False,4,negligable ringing,True,1
+91,sub-CM05540/ses-202307111,False,4,ghosting of eyes negligibly clips brain,False,0
+92,sub-CM06299/ses-202305181,False,4,No notable issues,False,0
+93,sub-CM06299/ses-202307191,False,4,no notable issues,False,0
+94,sub-CM06538/ses-202305251,False,3,Minor ringing,True,1
+96,sub-CM06683/ses-202306231,False,4,no notable issues,False,0
+99,sub-CM08970/ses-202308221,False,3,ringing and motion,True,1
+106,sub-CP01128/ses-202302231,False,3,quite a bit of motion,True,1
+107,sub-CP01128/ses-202305251,False,3,moderate ringing,True,1
+111,sub-CP08754/ses-202306291,False,3,moderate ringing,True,1
+115,sub-CP36238/ses-202304131,False,4,,False,0
+116,sub-CP36238/ses-202306151,False,4,no notable issues,False,0
+118,sub-CP47813/ses-202307131,False,3,grainy,False,0
+129,sub-CP82421/ses-202308031,False,4,no notable issues,False,0
+132,sub-CP88631/ses-202303231,False,4,no non-norm/auxillary file ,False,0
+133,sub-CP88631/ses-202306011,False,4,no notable issues,False,0
+135,sub-GA00423/ses-202302211,False,3,A bit blurrier than normal,False,0
+136,sub-GA00423/ses-202305031,False,4,no notable issues,False,0
+137,sub-GA00639/ses-202302231,False,4,negligible ringing and minor ghosting of eyes that may slightly clip brain,True,1
+138,sub-GA00756/ses-202302271,False,4,,False,0
+139,sub-GA00756/ses-202305081,False,4,no notable issues,False,0
+140,sub-GA00940/ses-202307121,False,3,a bit grainy,False,0
+141,sub-GA00940/ses-202305121,False,4,,False,0
+142,sub-GA02815/ses-202305091,True,2,Serious motion and ringing at bottom of axial,True,2
+143,sub-GA02815/ses-202308221,False,3,"grainy, ringing",True,1
+146,sub-GA04102/ses-202302241,False,4,,False,0
+147,sub-GA04102/ses-202305051,False,4,no notable issues,False,0
+148,sub-GA06611/ses-202304201,False,3,mild ghosting of eyes with very mild impact on brain,False,0
+149,sub-GA06611/ses-202306201,False,3,minor ringing and ghosting,True,1
+150,sub-GA06750/ses-202304111,False,4,no notable issues,False,0
+151,sub-GA06750/ses-202306151,False,4,no notable issues,False,0
+152,sub-GA11092/ses-202308041,False,3,"grainy, mild ringing",True,1
+153,sub-GA11092/ses-202306021,False,4,no notable issues,False,0
+154,sub-GA11719/ses-202305181,False,4,no notable issues,False,0
+156,sub-GA11836/ses-202307311,False,3,moderately grainy,False,0
+157,sub-GA11836/ses-202306091,False,4,some cerebral atrophy ,False,0
+158,sub-GA13501/ses-202306131,False,3,slight ringing,True,1
+159,sub-GA13567/ses-202306061,False,4,no notable issues,False,0
+160,sub-GA15210/ses-202306141,False,4,,False,0
+161,sub-GA19927/ses-202308151,False,3,Minor ringing and some graininess,True,1
+167,sub-GW05566/ses-202306301,False,4,"minor ringing, nothing else to note",True,1
+168,sub-GW09340/ses-202308041,False,4,no notable issues,False,0
+169,sub-GW16929/ses-202304281,False,3,ringing,True,1
+170,sub-GW16929/ses-202308111,False,4,no notable issues,False,0
+171,sub-GW25873/ses-202305191,False,4,no notable issues,False,0
+172,sub-GW25873/ses-202308251,False,4,,False,0
+174,sub-GW52575/ses-202309081,False,4,no issues,False,0
+176,sub-GW57903/ses-202305261,False,3,mild ringing,True,1
+177,sub-GW57903/ses-202307211,False,4,No notable issues,False,0
+180,sub-GW76288/ses-202307281,False,3,minor ringing,True,1
+181,sub-GW76288/ses-202309011,False,4,no notable issues,False,0
+182,sub-GW76444/ses-202304211,False,4,No notable issues,False,0
+185,sub-HA03737/ses-202301111,False,4,,False,0
+186,sub-HA03737/ses-202303151,False,4,,False,0
+187,sub-HA03882/ses-202302051,False,4,"some bluriness around temporal poles, not significant",False,0
+188,sub-HA04408/ses-202211131,False,4,,False,0
+189,sub-HA04486/ses-202307061,False,4,no notable issues,False,0
+190,sub-HA07244/ses-202302211,False,4,,False,0
+191,sub-HA07888/ses-202302191,False,4,potential incidental finding in front and back of brain not seen in T2w ,False,0
+192,sub-HA07888/ses-202304161,False,4,,False,0
+193,sub-HA10677/ses-202308181,True,2,severe ringing/motion,True,2
+194,sub-HA10677/ses-202305161,False,3,"ringing, ghosting of eyes that slightly affects brain",True,1
+195,sub-HA11998/ses-202305151,False,4,no notable issues,False,0
+202,sub-HK16126/ses-202305021,False,4,no notable issues,False,0
+205,sub-HK23905/ses-202306231,False,4,nothing to note,False,0
+207,sub-HK36427/ses-202305101,False,3,Minor ringing,True,1
+209,sub-HK60983/ses-202305111,False,4,,False,0
+210,sub-HK67064/ses-202306011,False,4,no notable issues,False,0
+211,sub-HK71168/ses-202308171,False,4,,False,0
+215,sub-IR00124/ses-202210141,False,3,"moderate motion at bottom of brain, ringing from frontal lobe into center of brain",True,1
+216,sub-IR00124/ses-202212211,False,3,ringing throughout (especially axial view),True,1
+217,sub-IR00491/ses-202210171,False,4,very faint ringing in nonnorm,True,1
+218,sub-IR00491/ses-202212191,False,4,,False,0
+219,sub-IR01451/ses-202210281,False,3,some ringing in frontal lobe but not significant,True,1
+220,sub-IR01451/ses-202301041,False,4,faint ringing but not significant,True,1
+221,sub-IR01762/ses-202212131,False,4,,False,0
+222,sub-IR01762/ses-202302131,False,4,no notable issues ,False,0
+223,sub-IR02516/ses-202301131,False,4,,False,0
+224,sub-IR02677/ses-202303221,True,2,"QC'd run 2, a lot of motion and ringing throughout",True,2
+225,sub-IR05485/ses-202302151,False,4,very minor ringing ,True,1
+226,sub-IR05485/ses-202304261,False,4,No notable issues,False,0
+227,sub-IR08198/ses-202305121,False,3,Some motion and ringing,True,1
+228,sub-IR08198/ses-202302161,False,4,minor ringing ,True,1
+229,sub-IR08259/ses-202306051,False,3,ringing,True,1
+230,sub-IR08259/ses-202303131,False,4,No notable issues,False,0
+231,sub-IR08615/ses-202303091,False,3,Ringing,False,0
+232,sub-IR08615/ses-202305181,False,3,ringing,True,1
+233,sub-IR09281/ses-202304071,False,3,mild ringing throughout,True,1
+234,sub-IR09281/ses-202306211,False,3,ghosting of eyes clips brain a bit,False,0
+235,sub-IR10222/ses-202306291,False,4,no notable issues,False,0
+236,sub-IR11959/ses-202305301,False,3,some ringing,True,1
+237,sub-IR11959/ses-202308071,False,3,mild ringing,True,1
+238,sub-IR13141/ses-202308251,False,3,Minor ringing,True,1
+239,sub-IR13141/ses-202306221,False,4,negligible ringing,True,1
+240,sub-IR14628/ses-202306301,False,4,no notable issues,False,0
+241,sub-IR14628/ses-202309051,False,4,,False,0
+242,sub-IR15177/ses-202308171,False,4,No notable issues,False,0
+243,sub-IR19434/ses-202308091,False,4,no notable issues,False,0
+245,sub-IR19595/ses-202308301,False,4,Negligible ringing,True,1
+255,sub-JE26896/ses-202308291,False,4,,False,0
+261,sub-KC01497/ses-202303291,False,4,no notable issues,False,0
+264,sub-KC01558/ses-202304031,False,4,no notable issues,False,0
+265,sub-KC01558/ses-202306051,False,4,no notable issues,False,0
+266,sub-KC02324/ses-202304171,False,3,"moderate ringing, a bit grainy, slighlty skewed orientstion",True,1
+267,sub-KC02324/ses-202306211,False,3,grainy,False,0
+268,sub-KC03534/ses-202304121,False,3,Some graininess and notable ringing,True,1
+269,sub-KC03734/ses-202304191,False,4,no notable issues,False,0
+270,sub-KC03734/ses-202306271,False,4,no notable issues,False,0
+271,sub-KC04005/ses-202306221,False,3,Some bluriness,False,0
+272,sub-KC04005/ses-202308221,False,3,"Some graininess, ringing, and minor artifacts seemingly from wet hair",True,1
+273,sub-KC05926/ses-202305261,False,4,no notable issues,False,0
+274,sub-KC05926/ses-202308021,False,4,a bit grainy,False,0
+275,sub-KC06453/ses-202303221,False,4,no notable issues,False,0
+276,sub-KC07974/ses-202305101,False,4,,False,0
+277,sub-KC07974/ses-202307131,False,4,,False,0
+278,sub-KC12416/ses-202306211,False,3,a bit grainy,False,0
+280,sub-KC15274/ses-202308171,False,4,no notable issues,False,0
+282,sub-KC17200/ses-202306291,False,3,a bit grainy,False,0
+284,sub-KC17250/ses-202307121,False,4,no notable issues,False,0
+286,sub-KC17444/ses-202307031,False,3,grainy,False,0
+288,sub-KC18232/ses-202307171,False,3,grainy as you near bottom of axial view,False,0
+290,sub-KC18393/ses-202308071,False,4,,False,0
+296,sub-LA00145/ses-202211231,False,4,,False,0
+297,sub-LA00145/ses-202301271,False,4,faint ringing,True,1
+298,sub-LA00834/ses-202210101,False,4,,False,0
+299,sub-LA00834/ses-202212051,False,4,,False,0
+300,sub-LA03036/ses-202211201,False,3,"potential incidental finding near pituitary? ringing, some mo",True,1
+301,sub-LA03036/ses-202209221,False,4,,False,0
+302,sub-LA04513/ses-202208311,False,3,faint ringing in coronal view,True,1
+303,sub-LA04513/ses-202210281,False,3,"structural abnormality in posterior left hemisphere on T1 that is not showing on T2, some faint ringing ",True,1
+304,sub-LA05539/ses-202212081,False,3,Notable ringing in all views,True,1
+305,sub-LA05539/ses-202210131,False,4,"Not perfectly aligned along longitudinal fissure (off by a few degrees), some weird wrap around toward anterior brain, but images look good",False,0
+306,sub-LA07315/ses-202212161,False,4,faint ringing but not significant,True,1
+307,sub-LA07315/ses-202302131,False,4,,False,0
+308,sub-LA08975/ses-202212191,False,4,faint ringing but not significant,True,1
+309,sub-LA09541/ses-202307171,False,3,"ringing, slight motion causing blurriness, bright spots surrounding skull due to residual EEG gel but does not impede on brain matter",True,1
+310,sub-LA09541/ses-202305101,False,4,no notable issues,False,0
+311,sub-LA10209/ses-202306231,False,3,ghosting of eyes that clips brain a little bit,False,0
+313,sub-LA10304/ses-202304051,True,2,Severe motion and ringing,True,2
+314,sub-LA10304/ses-202301241,False,4,minor ringing,True,1
+315,sub-LA12291/ses-202212131,False,4,slight ringing,True,1
+316,sub-LA12291/ses-202303061,False,4,faint ringing in temporal poles,True,1
+318,sub-LA14055/ses-202301181,False,4,very faint ringing ,True,1
+319,sub-LA14055/ses-202303171,False,4,,False,0
+320,sub-LA14300/ses-202304111,False,3,ringing,True,1
+321,sub-LA15443/ses-202304031,False,3,slight ringing,True,1
+322,sub-LA15443/ses-202306131,False,3,ringing and significant motion (worse at superior and lateral sections of the brain),True,1
+323,sub-LA15554/ses-202307071,False,3,"mild ringing, a bit grainy",True,1
+324,sub-LA21640/ses-202305261,False,3,slight ringing,True,1
+325,sub-LA21640/ses-202308021,False,4,no notable issues,False,0
+326,sub-LA24553/ses-202308081,False,3,mild ringing,True,1
+329,sub-LA26945/ses-202308211,False,4,Negligible ringing,True,1
+333,sub-LS03187/ses-202308181,False,4,,False,0
+334,sub-LS09836/ses-202307141,False,3,Minor ringing,True,1
+337,sub-LS13685/ses-202307171,False,4,No notable issues,False,0
+341,sub-LS40571/ses-202303201,False,4,,False,0
+344,sub-LS53532/ses-202309111,False,4,no notable issues,False,0
+345,sub-LS56289/ses-202309061,False,4,moderate ringing,True,1
+346,sub-LS69701/ses-202308181,False,4,no notable issues,False,0
+347,sub-LS69878/ses-202309071,False,4,negligible ringing,True,1
+348,sub-LS82943/ses-202308181,False,4,incidental finding,False,0
+350,sub-MA00635/ses-202305121,False,4,no notable issues,False,0
+351,sub-MA00635/ses-202307121,False,4,negligible ringing,True,1
+352,sub-MA02166/ses-202304041,False,4,no notable issues,False,0
+353,sub-MA02166/ses-202306091,False,4,no notable issues,False,0
+354,sub-MA03726/ses-202308011,False,3,Minor ringing,True,1
+356,sub-MA05213/ses-202305221,False,4,no notable issues,False,0
+358,sub-MA06340/ses-202304181,False,4,,False,0
+359,sub-MA06340/ses-202306271,False,4,,False,0
+360,sub-MA06451/ses-202304251,False,3,some ringing,True,1
+361,sub-MA08615/ses-202307101,False,3,Minor ringing and ghosting at eyes,True,1
+362,sub-MA08615/ses-202305091,False,4,,False,0
+363,sub-MA12153/ses-202305161,False,4,no notable issues,False,0
+364,sub-MA12153/ses-202307211,False,4,no notable issues,False,0
+365,sub-MA13824/ses-202307071,False,4,No notable issues,False,0
+368,sub-MA14240/ses-202308041,False,4,no notable issues,False,0
+370,sub-MA14967/ses-202307181,True,2,moderate to severe ringing,True,2
+372,sub-MA15250/ses-202308011,False,4,no notable issues,False,0
+374,sub-MA15305/ses-202308081,False,3,moderate ringing,True,1
+376,sub-MA15888/ses-202308291,False,4,no issues,False,0
+387,sub-ME00772/ses-202210281,False,4,minor motion,True,1
+388,sub-ME00772/ses-202301311,False,4,,False,0
+392,sub-ME02964/ses-202308291,False,3,ringing and ghosting,True,1
+394,sub-ME03013/ses-202211251,False,4,,False,0
+395,sub-ME03013/ses-202302101,False,4,,False,0
+396,sub-ME03435/ses-202305261,False,4,no notable issues,False,0
+397,sub-ME03435/ses-202308251,False,4,,False,0
+398,sub-ME04106/ses-202209091,False,4,,False,0
+399,sub-ME04106/ses-202211181,False,4,,False,0
+400,sub-ME04934/ses-202212021,False,4,,False,0
+401,sub-ME04934/ses-202303311,False,4,,False,0
+402,sub-ME04962/ses-202304061,False,3,Very minor ringing,True,1
+403,sub-ME05411/ses-202303281,False,4,No notable issues,False,0
+404,sub-ME06126/ses-202304211,False,3,mild ringing,True,1
+406,sub-ME07003/ses-202309081,False,3,ghosting of eyes clips temporal poles,False,0
+407,sub-ME07003/ses-202306301,False,4,no notable issues,False,0
+408,sub-ME07469/ses-202303091,False,4,,False,0
+409,sub-ME07469/ses-202307281,False,4,no notable issues,False,0
+411,sub-ME10086/ses-202301061,False,4,,False,0
+412,sub-ME10092/ses-202309011,False,3,moderate ringing,True,1
+413,sub-ME10092/ses-202306271,False,4,minor motion only at top of brain,True,1
+414,sub-ME10464/ses-202305191,False,4,nothing to note,False,0
+415,sub-ME11046/ses-202303241,False,3,some ringing,True,1
+416,sub-ME11046/ses-202306231,False,4,negligible ringing,True,1
+417,sub-ME11363/ses-202302031,False,4,potential incidental finding - outgrowth of cerebellum not seen in T2 ,False,0
+419,sub-ME12189/ses-202302101,False,3,slight ringing,True,1
+420,sub-ME12189/ses-202309081,False,4,,False,0
+421,sub-ME12967/ses-202304211,False,4,no notable issues,False,0
+422,sub-ME14432/ses-202305191,True,2,"named as run 2, orientation of brain is skewed, ringing ",True,2
+423,sub-ME14432/ses-202303031,False,3,significant ringing,True,1
+424,sub-ME14432/ses-202306091,False,3,Some ringing,True,1
+425,sub-ME14898/ses-202302171,False,4,very faint ringing ,True,1
+426,sub-ME14898/ses-202305121,False,4,no notable issues,False,0
+431,sub-ME19787/ses-202212061,False,4,No notable issues,False,0
+432,sub-ME19787/ses-202302241,False,4,very faint ringing,True,1
+433,sub-ME20134/ses-202304141,False,4,,False,0
+434,sub-ME20134/ses-202309011,False,4,no notable issues,False,0
+435,sub-ME20328/ses-202304141,False,4,,False,0
+436,sub-ME20845/ses-202301271,False,4,faint ringing,True,1
+437,sub-ME20845/ses-202211231,False,4,no notable issues,False,0
+438,sub-ME20845/ses-202303171,False,4,,False,0
+439,sub-ME21588/ses-202302221,False,4,no notable issues ,False,0
+440,sub-ME21588/ses-202306161,False,4,negligible ringing,True,1
+441,sub-ME21922/ses-202209021,False,4,slight motion of temporal lobes,True,1
+442,sub-ME21922/ses-202211111,False,4,nothing to note,False,0
+443,sub-ME22209/ses-202303171,False,4,no notable issues ,False,0
+444,sub-ME23108/ses-202308041,False,3,"ringing, bright artifact around head but does not impede on brain matter",True,1
+446,sub-ME23847/ses-202304141,False,4,no notable issues,False,0
+449,sub-ME25045/ses-202306301,True,2,severe ringing and ghosting of eyes,True,2
+450,sub-ME25689/ses-202210071,False,4,"mild motion of temporal poles and cerebellum, minor ringing at top of brain",True,1
+451,sub-ME25689/ses-202301131,False,4,,False,0
+452,sub-ME25712/ses-202303031,False,4,"very faint ringing, insignificant",True,1
+453,sub-ME25906/ses-202303311,False,4,nothing to note,False,0
+455,sub-ME26061/ses-202306021,False,3,Minor ringing,True,1
+457,sub-ME27132/ses-202211111,False,3,mild ringing,True,1
+458,sub-ME27132/ses-202302141,False,4,,False,0
+459,sub-ME27643/ses-202308111,False,4,,False,0
+461,sub-ME29980/ses-202307251,False,3,mild/moderate ringing,True,1
+464,sub-ME31169/ses-202303171,False,4,"gyri/sulci look somewhat strange, looks to be a lot of space superior to brain between skull",False,0
+465,sub-ME31331/ses-202302031,False,4,,False,0
+467,sub-ME31947/ses-202308221,False,4,no notable issues,False,0
+470,sub-ME33634/ses-202211181,False,4,slight ringing but not significant,True,1
+471,sub-ME33634/ses-202302031,False,4,,False,0
+472,sub-ME33745/ses-202307111,False,3,moderate ringing,True,1
+473,sub-ME33745/ses-202309121,False,4,no notable issues,False,0
+474,sub-ME33795/ses-202302031,False,3,slight ringing but not significant,True,1
+476,sub-ME34961/ses-202308251,False,4,,False,0
+478,sub-ME35971/ses-202304211,False,3,Minor ringing,True,1
+479,sub-ME35971/ses-202307071,False,4,ghosting of eyes clips brain very slightly,False,0
+480,sub-ME36303/ses-202306161,False,3,ringing,True,1
+482,sub-ME36620/ses-202309151,False,4,no issues,False,0
+486,sub-ME39294/ses-202306231,False,3,ghosting at eyes clips brain a bit,False,0
+490,sub-ME40663/ses-202209301,False,3,"some ringing persisting of temporal lobes, frontal lobe, and eyes",True,1
+494,sub-ME41251/ses-202307071,False,4,no notable issues,False,0
+498,sub-ME42794/ses-202308181,False,3,ringing,True,1
+501,sub-ME45130/ses-202309151,False,4,no notable issues,False,0
+505,sub-ME45530/ses-202308081,False,4,no notable issues,False,0
+508,sub-ME46095/ses-202306091,False,3,"moderate ringing, ghosting at eyes",True,1
+509,sub-ME46095/ses-202308151,False,4,No notable issues,False,0
+511,sub-ME46506/ses-202307281,False,3,"mild ringing, ghosting at eyes",True,1
+513,sub-ME46984/ses-202307211,False,3,ringing ,True,1
+516,sub-ME48643/ses-202211251,False,3,"ringing, blurry",True,1
+517,sub-ME48643/ses-202301271,False,3,some ringing and motion,True,1
+518,sub-ME50511/ses-202304061,False,3,some ringing ,True,1
+519,sub-ME50511/ses-202306301,False,3,moderate ringing,True,1
+520,sub-ME50599/ses-202212201,False,3,mild peristent ringing,True,1
+521,sub-ME50599/ses-202302241,False,3,potential incidental finding - small hole/fluid near anterior to cerebellum,False,0
+522,sub-ME50599/ses-202212161,False,3,fairly significant ringing throughout,True,1
+524,sub-ME51971/ses-202308041,True,2,"severe ghosting of eyes that distorts brain. no other issues, but scoring 2 to be safe",False,1
+526,sub-ME53985/ses-202301311,False,4,,False,0
+527,sub-ME53985/ses-202304141,False,4,no notable issues,False,0
+529,sub-ME54434/ses-202301061,False,3,ringing throughout but not major ,True,1
+530,sub-ME54434/ses-202211041,False,4,No notable isssues,False,0
+531,sub-ME54606/ses-202308111,False,4,no notable issues,False,0
+533,sub-ME54628/ses-202303211,True,2,Severe ghosting/motion of eyes that obstructs brain (especially axial); minor ringing,True,2
+534,sub-ME54628/ses-202305261,False,4,negligible ringing and minor ghosting of eyes that may slightly clip brain,True,1
+535,sub-ME55038/ses-202306231,False,3,"minor ringing, ghosting",True,1
+536,sub-ME55038/ses-202309121,False,4,no notable issues,False,0
+537,sub-ME56454/ses-202209201,False,3,"minor ringing of temporal poles, part of frontal lobe, and back of brain. some motion throughout temporal poles",True,1
+538,sub-ME56587/ses-202306161,False,3,moderate ringing,True,1
+539,sub-ME57119/ses-202305121,False,3,slight ringing and vertical ghosting of the eys,True,1
+541,sub-ME57820/ses-202306161,False,4,nothing to note,False,0
+543,sub-ME58135/ses-202307071,False,3,"grainy, very slight ringing",True,1
+544,sub-ME58135/ses-202302171,False,4,no notable issues ,False,0
+545,sub-ME59406/ses-202306271,False,4,no notable issues,False,0
+546,sub-ME59951/ses-202308181,False,3,ringing throughout,True,1
+548,sub-ME60881/ses-202306021,False,3,slight ringing,True,1
+549,sub-ME60881/ses-202308251,False,4,No notable issues,False,0
+550,sub-ME61146/ses-202305121,False,4,,False,0
+553,sub-ME62639/ses-202309051,False,4,,False,0
+557,sub-ME65714/ses-202309011,False,4,no notable issues,False,0
+559,sub-ME66368/ses-202307181,False,3,signifiant ringing in all views,True,1
+561,sub-ME67495/ses-202302241,False,3,slight ringing throughout,True,1
+562,sub-ME67495/ses-202305261,False,4,negligible ringing,True,1
+564,sub-ME67990/ses-202301131,False,4,,False,0
+565,sub-ME67990/ses-202210141,False,4,No notable isssues,False,0
+566,sub-ME67990/ses-202303241,False,4,no notable issues ,False,0
+568,sub-ME70062/ses-202305181,False,4,"cerebellar atrophy and around the sinuses, but scan is good",False,0
+570,sub-ME70567/ses-202309081,False,4,no notable issues,False,0
+571,sub-ME71933/ses-202307281,True,2,substantial ghosting in bottom of axial view,False,1
+573,sub-ME73814/ses-202211041,False,4,No notable isssues,False,0
+574,sub-ME73814/ses-202301311,False,4,,False,0
+576,sub-ME74779/ses-202303241,False,3,Slight motion,True,1
+578,sub-ME76000/ses-202304211,False,3,ghosting of eyes that slightly affects brain,False,0
+579,sub-ME76000/ses-202308181,False,3,Ghosting of eyes interferes with brain,False,0
+584,sub-ME77143/ses-202308251,False,3,Minor ringing,True,1
+585,sub-ME77159/ses-202209301,False,3,persistant ringing throughout frontal lobe,True,1
+586,sub-ME77159/ses-202211251,False,3,persistent mild ringing throughout,True,1
+587,sub-ME77848/ses-202309011,False,4,very minor ringing,True,1
+589,sub-ME78581/ses-202210071,False,4,mild ringing of top of brain,True,1
+591,sub-ME79624/ses-202308291,False,3,slight ringing,True,1
+592,sub-ME79913/ses-202212201,False,3,persistent mild ringing ,True,1
+593,sub-ME79913/ses-202212161,False,3,slight ringing throughout,True,1
+594,sub-ME79913/ses-202302101,False,4,,False,0
+595,sub-ME81520/ses-202210281,False,4,minor motion and slight ringing at front of brian,True,1
+596,sub-ME81520/ses-202302171,False,4,no notable issues ,False,0
+597,sub-ME82580/ses-202307141,False,4,no notable issues,False,0
+599,sub-ME83439/ses-202306301,False,4,nothing to note ,False,0
+600,sub-ME83439/ses-202309081,False,4,,False,0
+601,sub-ME84344/ses-202303031,False,4,No notable issues,False,0
+602,sub-ME84388/ses-202305261,False,3,Some ringing,True,1
+604,sub-ME86586/ses-202309081,False,4,no notable issues,False,0
+606,sub-ME89055/ses-202210211,False,4,a bit grainy but nothing to note,False,0
+609,sub-ME91012/ses-202301271,False,3,"some ringing, sagittal orientation slightly skewed ",True,1
+610,sub-ME91012/ses-202303311,False,3,Minor ringing,True,1
+611,sub-ME91028/ses-202304141,False,4,no notable issues,False,0
+612,sub-ME92705/ses-202306161,False,4,small bump between dura and skull,False,0
+613,sub-ME93565/ses-202301061,False,3,mild ringing throughout,True,1
+614,sub-ME93565/ses-202303241,False,3,notable ringing,True,1
+615,sub-ME95674/ses-202304281,False,4,no notable issues,False,0
+616,sub-ME95674/ses-202308251,False,4,Negligible ringing,True,1
+618,sub-ME97666/ses-202210141,False,4,"i feel like this one was weird, ventricles look abnormally large, could be some signal drop in cerebellum area, might need to have someone check this one",False,0
+619,sub-ME97666/ses-202212161,False,4,,False,0
+620,sub-ME97666/ses-202302011,False,4,potential incidental finding - outgrowth of cerebellum not seen in T2 ,False,0
+622,sub-ME98165/ses-202303031,False,3,significant ringing,True,1
+623,sub-ME98165/ses-202304281,False,3,ringing,True,1
+624,sub-ME99125/ses-202305261,False,3,minor ringing,True,1
+626,sub-MT00499/ses-202211081,False,3,some ringing throughout,True,1
+627,sub-MT00499/ses-202301192,False,3,ringing throughout,True,1
+628,sub-MT01504/ses-202301181,False,4,,False,0
+629,sub-MT03607/ses-202212291,False,4,,False,0
+630,sub-MT03607/ses-202303022,False,4,,False,0
+631,sub-MT03607/ses-202303021,False,4,,False,0
+632,sub-MT05499/ses-202212101,False,4,,False,0
+633,sub-MT05499/ses-202303062,False,4,minor ringing at the top of the brain,True,1
+634,sub-MT05499/ses-202303061,False,4,No notable issues,False,0
+635,sub-MT07364/ses-202212211,False,4,,False,0
+636,sub-MT07364/ses-202303271,False,4,no notable issues,False,0
+637,sub-MT08124/ses-202301201,False,3,motion,True,1
+638,sub-MT08124/ses-202304131,False,4,No notable issues,False,0
+639,sub-MT09245/ses-202302021,False,3,faint ringing but not significant ,True,1
+640,sub-MT12595/ses-202303071,False,4,,False,0
+641,sub-MT12595/ses-202305311,False,4,no notable issues,False,0
+642,sub-MT13133/ses-202303081,False,3,some ringing,True,1
+643,sub-MT13133/ses-202305041,False,4,,False,0
+644,sub-MT15919/ses-202304031,False,4,,False,0
+645,sub-MT16018/ses-202303271,False,4,incidental finding - large cyst in right temporal pole ,False,0
+646,sub-MT16018/ses-202305251,False,4,no notable issues,False,0
+647,sub-MT16074/ses-202304051,False,3,ringing ,True,1
+648,sub-MT18250/ses-202308101,False,4,no notable issues,False,0
+649,sub-MT18272/ses-202307021,False,3,mild to moderate ringing,True,1
+650,sub-MT18272/ses-202309051,False,4,no notable issues,False,0
+651,sub-MT18844/ses-202308091,False,3,ghosting at eyes clips temporal poles,False,0
+653,sub-MT20156/ses-202307101,False,3,ghosting of eyes slightly clips brain,False,0
+655,sub-MT21233/ses-202306221,False,4,somewhat enlarged ventricles,False,0
+656,sub-MT22493/ses-202307211,False,4,no notable issues,False,0
+658,sub-MT23247/ses-202308171,False,3,ringing,True,1
+661,sub-MU00229/ses-202304241,False,3,moderate ringing,True,1
+662,sub-MU03287/ses-202305221,False,3,ringing,True,1
+663,sub-MU03287/ses-202307311,False,3,mild ringing,True,1
+664,sub-MU03332/ses-202306261,False,3,Noticable ringing,True,1
+665,sub-MU03865/ses-202306191,False,3,some ringing,True,1
+667,sub-MU03948/ses-202307031,False,3,Ringing,False,0
+669,sub-MU07033/ses-202308181,False,4,no notable issues,False,0
+677,sub-NC00191/ses-202209301,False,4,coronal slice orientation looks slightly skewed ,False,0
+678,sub-NC00474/ses-202210171,True,1,bizzare artifact at front of brain,False,1
+679,sub-NC02111/ses-202209061,False,3,,False,0
+680,sub-NC02111/ses-202211082,False,3,mild ringing throughout,True,1
+682,sub-NC03026/ses-202209161,False,3,Some ringing in all views,True,1
+683,sub-NC03026/ses-202211162,False,3,"grainy, mild ringing throughout",True,1
+685,sub-NC03204/ses-202210141,False,4,,False,0
+686,sub-NC03204/ses-202212131,False,4,No notable issues,False,0
+687,sub-NC04870/ses-202210201,False,4,minor motion at temporal lobes,True,1
+688,sub-NC04870/ses-202212081,False,4,,False,0
+689,sub-NC10194/ses-202302171,False,3,faint ringing throughout,True,1
+690,sub-NC10194/ses-202211101,False,4,mild ringing,True,1
+691,sub-NC11776/ses-202211151,False,4,,False,0
+692,sub-NC11776/ses-202301241,False,4,minor ringing ,True,1
+693,sub-NC12958/ses-202210271,False,4,,False,0
+694,sub-NC12958/ses-202302071,False,4,nothing to note,False,0
+695,sub-NC12958/ses-202302061,False,4,,False,0
+696,sub-NC13774/ses-202302271,False,4,,False,0
+697,sub-NC13774/ses-202307101,False,4,,False,0
+698,sub-NC15499/ses-202303091,False,3,slight ringing,True,1
+699,sub-NC15499/ses-202308241,False,4,no notable issues,False,0
+700,sub-NC17136/ses-202302201,False,4,,False,0
+701,sub-NC17619/ses-202302161,False,4,seems to have thick dura especially in occipital,False,0
+702,sub-NC17619/ses-202307121,False,4,No notable issues,False,0
+703,sub-NC18063/ses-202308151,False,3,slight ringing,True,1
+704,sub-NC18063/ses-202307111,False,4,no notable issues,False,0
+718,sub-NL00222/ses-202210031,False,4,nothing to note,False,0
+719,sub-NL00222/ses-202212131,False,4,,False,0
+720,sub-NL00927/ses-202210051,False,3,"persistent ringing from frontal lobe toward center of brain in axial view, ",True,1
+721,sub-NL01115/ses-202209271,False,4,faint ringing but not major,True,1
+722,sub-NL01115/ses-202212071,False,4,very slight ringing,True,1
+723,sub-NL01387/ses-202302211,False,4,slight ringing ,True,1
+724,sub-NL01387/ses-202304101,False,4,No notable issues,False,0
+725,sub-NL03179/ses-202306151,False,4,negligible ringing,True,1
+727,sub-NL06371/ses-202301301,False,4,,False,0
+728,sub-NL06371/ses-202303281,False,4,No notable issues,False,0
+729,sub-NL06632/ses-202302071,False,3,moderate ringing ,True,1
+730,sub-NL09062/ses-202303101,False,4,,False,0
+731,sub-NL09062/ses-202305231,False,4,no notable issues,False,0
+732,sub-NL09167/ses-202303231,False,3,fairly significant ringing throughout,True,1
+733,sub-NL09167/ses-202305221,False,3,"slight ghosting of eyes that clips brain, nelgigible ringing",True,1
+734,sub-NL10958/ses-202304201,False,4,No notable issues,False,0
+735,sub-NL10958/ses-202306131,False,4,no notable issues,False,0
+736,sub-NL13938/ses-202304111,False,3,slight ringing,True,1
+737,sub-NL13938/ses-202307111,False,3,ringing,True,1
+739,sub-NL18322/ses-202306201,False,3,mild ringing,True,1
+742,sub-NN01303/ses-202302161,False,4,vertical ghosting of eyes may negligibly affect brain in a few horizontal slices,False,0
+743,sub-NN01442/ses-202210241,False,4,,False,0
+744,sub-NN01442/ses-202211281,False,4,mild ringing and ghosting,True,1
+745,sub-NN01864/ses-202210271,False,3,"persistent ringing in frontal region, minor motion, little wraparound",True,1
+746,sub-NN01864/ses-202211291,False,4,mild ringing,True,1
+747,sub-NN02913/ses-202305111,False,4,no notable issues,False,0
+748,sub-NN02913/ses-202307071,False,4,no notable issues,False,0
+749,sub-NN03939/ses-202309061,False,4,,False,0
+751,sub-NN04333/ses-202210131,False,4,"Not perfectly aligned along longitudinal fissure (off by a few degrees), but images look good",False,0
+752,sub-NN04333/ses-202212011,False,4,,False,0
+753,sub-NN04555/ses-202304211,False,3,slight ringing throughout,True,1
+754,sub-NN04555/ses-202302101,False,4,minor ringing ,True,1
+755,sub-NN05521/ses-202303091,False,3,some ringing throughout,True,1
+756,sub-NN05521/ses-202305161,False,3,"moderate ringing, vertical ghosting of eyes slightly clips brain",True,1
+759,sub-NN12788/ses-202307071,False,3,light ringing visible in coronal view,True,1
+760,sub-NN12788/ses-202309051,False,3,relatively significant motion,True,1
+761,sub-NN13110/ses-202307311,False,3,mild ringing,True,1
+763,sub-NN13415/ses-202308211,False,3,vertical ghosting of eyes in ventral portion of horizontal section - does not impede significantly on brain matter,False,0
+767,sub-OR00697/ses-202208151,False,4,,False,0
+768,sub-OR01380/ses-202209281,False,4,,False,0
+769,sub-OR01380/ses-202211291,False,4,mild ringing,True,1
+770,sub-OR02023/ses-202210071,False,3,"some ringing throughout frontal lobe, minimal motion",True,1
+771,sub-OR02023/ses-202212131,False,4,No notable issues,False,0
+772,sub-OR02889/ses-202304201,False,3,ringing,True,1
+773,sub-OR02889/ses-202306301,False,4,anatomical artifact? right cerebellum seems much smaller? unclear? image otherwise looks good,False,0
+774,sub-OR03049/ses-202307281,False,4,negligible ringing,True,1
+776,sub-OR03988/ses-202301271,False,4,,False,0
+777,sub-OR03988/ses-202303301,False,4,,False,0
+778,sub-OR05031/ses-202302141,False,4,minor ringing ,True,1
+779,sub-OR06829/ses-202303231,False,3,noise,False,0
+780,sub-OR10406/ses-202306271,False,3,ringing,True,1
+781,sub-OR10406/ses-202304051,False,4,Almost unnoticable ringing,True,1
+782,sub-OR10684/ses-202305081,True,2,severe ringing,True,2
+783,sub-OR10684/ses-202308071,True,2,severe ringing/motion,True,2
+784,sub-OR10890/ses-202305221,False,3,moderate ringing,True,1
+786,sub-OR10973/ses-202308101,False,3,"minor motion, ringing, ghosting",True,1
+787,sub-OR10973/ses-202306061,False,4,,False,0
+788,sub-OR11644/ses-202306221,False,4,no notable issues,False,0
+789,sub-OR11644/ses-202308241,False,4,no notable issues,False,0
+794,sub-PA00272/ses-202209021,False,4,,False,0
+795,sub-PA00650/ses-202209061,True,2,"decent amount of motion, blurriness",True,2
+796,sub-PA00650/ses-202304041,False,3,slight ringing,True,1
+797,sub-PA00705/ses-202209201,False,4,"not perfectly aligned, coronal out of plane",False,0
+798,sub-PA00705/ses-202211231,False,4,No notable issues,False,0
+799,sub-PA01260/ses-202210201,False,3,,False,0
+800,sub-PA01260/ses-202301181,False,4,,False,0
+801,sub-PA01787/ses-202211281,False,3,persistent ringing throughout,True,1
+803,sub-PA01909/ses-202211211,False,3,"mild persistent ringing throughout, sagittal section badly aligned in plane but corresponds with horizontal position-wise (frontal lobe comes in before cerebellum)",True,1
+804,sub-PA01909/ses-202302231,False,3,some tissue atrophy at the top of the brain ,False,0
+805,sub-PA01921/ses-202303081,False,4,No notable issues,False,0
+806,sub-PA01921/ses-202305111,False,4,negligible ringing,True,1
+807,sub-PA02303/ses-202301231,False,4,,False,0
+808,sub-PA02303/ses-202307271,False,4,no notable issues,False,0
+809,sub-PA03218/ses-202305091,False,3,moderate ringing and mild ghosting of eyes that clips brain,True,1
+810,sub-PA03218/ses-202301271,False,4,,False,0
+811,sub-PA03224/ses-202304261,False,3,some ringing,True,1
+812,sub-PA03224/ses-202302041,False,4,,False,0
+813,sub-PA06165/ses-202304291,False,3,vertical ghosting of eyes with minor impact to brain,False,0
+814,sub-PA06165/ses-202302151,False,4,,False,0
+815,sub-PA06921/ses-202308171,False,3,mild ringing,True,1
+816,sub-PA06921/ses-202305051,False,4,,False,0
+817,sub-PA07319/ses-202303011,False,3,fairly significant ringing throughout,True,1
+818,sub-PA07319/ses-202305151,False,3,moderate ringing,True,1
+819,sub-PA08402/ses-202304061,False,3,ringing and ghosting of eyes that slightly affects brain,True,1
+820,sub-PA08402/ses-202306271,False,3,Minor ringing,True,1
+821,sub-PA08957/ses-202304241,False,4,No notable issues,False,0
+823,sub-PA14126/ses-202306131,False,4,wraparound at most inferior level of axial view but doesn't impact brain in any way,False,0
+825,sub-PA14348/ses-202306051,False,4,no notable issues,False,0
+827,sub-PA15669/ses-202306141,False,4,some graininess but otherwise good,False,0
+828,sub-PA16491/ses-202307071,False,4,no notable issues,False,0
+832,sub-PA18811/ses-202308231,False,4,no notable issues,False,0
+837,sub-PI01155/ses-202208311,False,4,,False,0
+838,sub-PI01355/ses-202209101,False,4,,False,0
+839,sub-PI02832/ses-202209241,False,3,persistent mild motion and ringing in all views,True,1
+840,sub-PI02832/ses-202211221,False,4,mild ringing (mainly sagittal),True,1
+841,sub-PI03042/ses-202209071,False,4,,False,0
+842,sub-PI06549/ses-202305111,False,4,negligible ringing,True,1
+843,sub-PI06549/ses-202307201,False,4,No notable issues,False,0
+844,sub-PI07604/ses-202306051,False,4,negligible ringing,True,1
+845,sub-PI08131/ses-202209221,False,4,"Not perfectly aligned along longitudinal fissure (off by a few degrees), but images look good",False,0
+846,sub-PI08131/ses-202211171,False,4,,False,0
+848,sub-PI08769/ses-202303021,False,3,"ringing, artificat outside of the head but does not affect brain",True,1
+849,sub-PI08769/ses-202305241,False,4,nothing to note,False,0
+850,sub-PI08781/ses-202301281,False,4,,False,0
+851,sub-PI08781/ses-202304011,False,4,No notable issues,False,0
+852,sub-PI08981/ses-202301101,False,3,"blurry, some ringing ",True,1
+853,sub-PI08981/ses-202304101,False,3,"slight ringing, ghosting at eyes",True,1
+854,sub-PI10215/ses-202304101,False,3,slight ringing,True,1
+855,sub-PI10215/ses-202305191,False,3,"some motino throughout, looks a bit grainy/blurry overall",False,0
+856,sub-PI10215/ses-202303161,False,4,"a little bit of tissue atrophy at the top of the brain, but not significant",False,0
+857,sub-PI10704/ses-202303201,False,4,,False,0
+858,sub-PI11625/ses-202309011,False,3,ringing,True,1
+859,sub-PI11625/ses-202303171,False,4,,False,0
+860,sub-PI13295/ses-202304151,False,3,some ringing / ghosting ,True,1
+861,sub-PI13295/ses-202306261,False,3,fairly significant ringing,True,1
+862,sub-PI16053/ses-202305121,False,3,moderate ringing,True,1
+863,sub-PI16053/ses-202307071,False,3,ringing,True,1
+864,sub-PI17229/ses-202307291,False,4,no notable issues,False,0
+866,sub-PI19738/ses-202307081,False,4,no notable issues,False,0
+868,sub-PI21034/ses-202309061,False,3,very minor ringing,True,1
+870,sub-PV00535/ses-202303151,False,4,No notable issues,False,0
+871,sub-PV00880/ses-202302081,False,4,no notable issues ,False,0
+873,sub-PV01062/ses-202307241,False,4,"a bit grainy, otherwise fine",False,0
+875,sub-PV01606/ses-202304051,False,4,No notable issues,False,0
+876,sub-PV01606/ses-202305311,False,4,no notable issues,False,0
+877,sub-PV01701/ses-202306211,False,4,,False,0
+879,sub-PV01828/ses-202305031,False,4,,False,0
+880,sub-PV01828/ses-202307051,False,4,No notable issues,False,0
+881,sub-PV02361/ses-202304261,False,4,no notable issues,False,0
+882,sub-PV02361/ses-202306261,False,4,no notable issues,False,0
+883,sub-PV04769/ses-202305171,False,3,mild ghosting of eyes that slightly interferes with brain,False,0
+884,sub-PV04769/ses-202307241,False,3,Some motion and ringing,True,1
+885,sub-PV06062/ses-202305241,False,4,4,False,0
+886,sub-PV06517/ses-202308281,False,4,,False,0
+887,sub-PV08171/ses-202306071,False,4,negligible ringing and ghosting of eyes,True,1
+888,sub-PV08171/ses-202307311,False,4,negligible ghosting at eyes,False,0
+889,sub-PV08193/ses-202307171,False,4,,False,0
+891,sub-PV09525/ses-202306261,False,3,"ghosting at eyes clips brain, mild ringing (moderate at midline)",True,1
+892,sub-PV09525/ses-202308281,False,4,,False,0
+893,sub-PV11376/ses-202307031,False,3,minor ringing,True,1
+894,sub-PV11376/ses-202309041,False,3,ringing,True,1
+895,sub-PV15122/ses-202309111,False,3,mild ringing,True,1
+897,sub-SD03495/ses-202302091,False,3,"slight ringing, some atrophy in the frontal lobe tissue but not concerning (Marek looked over it) ",True,1
+898,sub-SD03495/ses-202212021,False,4,,False,0
+899,sub-SD03790/ses-202301231,False,4,very minor ringing ,True,1
+900,sub-SD04033/ses-202305261,False,3,ringing,True,1
+901,sub-SD04033/ses-202303171,False,4,No notable issues,False,0
+902,sub-SD04350/ses-202304061,False,4,no notable issues,False,0
+903,sub-SD04350/ses-202306131,False,4,,False,0
+905,sub-SD05710/ses-202305181,False,3,moderate ringing,True,1
+906,sub-SD05710/ses-202303161,False,4,,False,0
+907,sub-SD06869/ses-202304071,False,4,,False,0
+908,sub-SD06897/ses-202304241,False,3,slight ringing,True,1
+909,sub-SD06897/ses-202306141,False,3,minor ringing,True,1
+910,sub-SD07279/ses-202307121,False,3,minor ringing,True,1
+911,sub-SD07279/ses-202305191,False,4,minor ringing through front and top of brain,True,1
+912,sub-SD09461/ses-202307201,False,3,Minor ringing,True,1
+914,sub-SD10646/ses-202308211,False,3,ghosting at eyes clips temporal poles,False,0
+918,sub-SF01552/ses-202304111,False,3,"incidental finding on skull, some motion",True,1
+919,sub-SF01552/ses-202304201,False,4,no notable issues,False,0
+920,sub-SF01552/ses-202306061,False,4,no notable issues,False,0
+921,sub-SF02156/ses-202306041,True,2,severe ringing,True,2
+922,sub-SF02156/ses-202308101,True,2,Very noticable ringing artifact,True,2
+923,sub-SF03788/ses-202212141,False,4,No notable issues,False,0
+924,sub-SF05231/ses-202301181,False,3,faint ringing ,True,1
+925,sub-SF05231/ses-202304111,False,3,ringing,True,1
+926,sub-SF10428/ses-202301181,False,4,no notable issues,False,0
+927,sub-SF10428/ses-202304081,False,4,No issues to note,False,0
+928,sub-SF10462/ses-202301131,False,4,,False,0
+929,sub-SF10462/ses-202304061,False,4,,False,0
+930,sub-SF10545/ses-202302121,True,2,significant ringing,True,2
+931,sub-SF10545/ses-202305051,False,4,No notable issues,False,0
+932,sub-SF12054/ses-202302281,False,4,,False,0
+933,sub-SF12054/ses-202305181,False,4,,False,0
+934,sub-SF13975/ses-202304281,False,4,no notable issues,False,0
+935,sub-SF13975/ses-202307181,False,4,no notable issues,False,0
+936,sub-SF14052/ses-202304101,False,3,significant ringing ,True,1
+937,sub-SF14052/ses-202304102,False,3,^,False,0
+938,sub-SF14052/ses-202308041,False,3,"a bit grainy, mild ringing",True,1
+939,sub-SF14963/ses-202306281,False,3,moderate motion and ringing,True,1
+940,sub-SF14963/ses-202309111,False,3,ringing,True,1
+941,sub-SF19868/ses-202307121,True,1,severe braces artifact in frontal lobe,False,1
+943,sub-SF29950/ses-202308301,False,3,ringing,True,1
+945,sub-SG10636/ses-202302211,False,3,ringing throughout (for run1),True,1
+946,sub-SG18044/ses-202301251,False,4,No notable issues,False,0
+947,sub-SG18044/ses-202306091,False,4,no notable issues,False,0
+949,sub-SG25112/ses-202303271,False,4,No notable issues (person's head is quite round),False,0
+950,sub-SG25112/ses-202305191,False,4,no notable issues,False,0
+951,sub-SG26099/ses-202308041,False,4,no notable issues,False,0
+953,sub-SG36292/ses-202308251,False,4,,False,0
+955,sub-SG60081/ses-202302241,False,4,"extra scan, QC'd run 2",False,0
+956,sub-SG60081/ses-202304211,False,4,no notable issues,False,0
+958,sub-SG77682/ses-202302231,False,4,,False,0
+959,sub-SG97600/ses-202302201,False,4,,False,0
+960,sub-SI00132/ses-202308111,True,2,"severe ringing, motion, ghosting at eyes clips temporal poles",True,2
+961,sub-SI00132/ses-202301271,False,3,re-scanned- QC'd run 2. some bluriness and ringing to back of brain/ at top of brain,True,1
+962,sub-SI00726/ses-202304141,False,3,Ringing and minor ghosting,False,0
+963,sub-SI00726/ses-202212281,False,4,,False,0
+964,sub-SI03540/ses-202212211,False,4,,False,0
+965,sub-SI03540/ses-202303081,False,4,,False,0
+966,sub-SI04099/ses-202301181,False,4,,False,0
+967,sub-SI05265/ses-202302011,False,4,faint ringing ,True,1
+968,sub-SI05265/ses-202305121,False,4,no notable issues,False,0
+970,sub-SI07530/ses-202304071,False,3,Noticable ringing,True,1
+971,sub-SI07530/ses-202307241,False,3,ringing,True,1
+974,sub-SI08940/ses-202307101,False,3,ringing,True,1
+975,sub-SI08940/ses-202304211,False,4,no notable issues,False,0
+976,sub-SI14814/ses-202308211,False,4,No notable issues,False,0
+977,sub-SI16173/ses-202309011,False,4,No notable issues,False,0
+979,sub-SI18937/ses-202308071,False,4,Negligible ringing,True,1
+980,sub-SI20411/ses-202308301,False,3,Minor ringing,True,1
+986,sub-SL00100/ses-202303221,False,4,No notable issues,False,0
+987,sub-SL00677/ses-202304281,False,4,no notable issues,False,0
+989,sub-SL01710/ses-202304281,False,4,,False,0
+992,sub-SL03607/ses-202307131,False,4,no notable issues,False,0
+994,sub-SL04334/ses-202308111,False,4,skull cut off but brain isn't,False,0
+995,sub-SL05011/ses-202308111,False,4,no issues,False,0
+1009,sub-TE00307/ses-202210201,False,4,A little blurry,False,0
+1010,sub-TE00307/ses-202212151,False,4,,False,0
+1011,sub-TE00646/ses-202303231,False,4,No notable issues,False,0
+1012,sub-TE04070/ses-202212081,False,4,No notable issues,False,0
+1013,sub-TE04070/ses-202303231,False,4,,False,0
+1015,sub-TE05018/ses-202303201,False,3,slight ringing,True,1
+1016,sub-TE05018/ses-202306061,False,4,,False,0
+1017,sub-TE05957/ses-202307311,False,3,"mild ringing, grainy",True,1
+1018,sub-TE05957/ses-202305121,False,4,no notable issues,False,0
+1019,sub-TE06062/ses-202309071,False,4,no issues,False,0
+1020,sub-TE06290/ses-202212051,False,4,No notable issues,False,0
+1021,sub-TE06290/ses-202303161,False,4,,False,0
+1022,sub-TE06973/ses-202303311,False,4,No notable issues,False,0
+1023,sub-TE06973/ses-202306091,False,4,no notable issues,False,0
+1024,sub-TE07527/ses-202306071,False,3,Slight ringing,True,1
+1025,sub-TE07527/ses-202303171,False,4,,False,0
+1026,sub-TE08898/ses-202303281,False,3,slight ringing,True,1
+1027,sub-TE08898/ses-202305301,False,3,ringing,True,1
+1028,sub-TE13580/ses-202305231,False,3,moderate ringing,True,1
+1029,sub-TE13580/ses-202303271,False,4,,False,0
+1030,sub-TE14534/ses-202303151,False,4,,False,0
+1031,sub-TE14534/ses-202305221,False,4,no notable issues,False,0
+1032,sub-TE15405/ses-202305181,False,4,"slight vertical ghosting of eyes, doesn't affect brain",False,0
+1033,sub-TE15405/ses-202307141,False,4,no notable issues,False,0
+1034,sub-TE15483/ses-202305091,False,3,faint ringing ,True,1
+1035,sub-TE15483/ses-202307201,False,4,no notable issues,False,0
+1036,sub-TE16009/ses-202305311,False,4,No notable issues,False,0
+1037,sub-TE16009/ses-202307261,False,4,no notable issues,False,0
+1038,sub-TE16560/ses-202306231,False,4,nothing to note,False,0
+1039,sub-TE16560/ses-202309081,False,4,no issues,False,0
+1040,sub-TE17053/ses-202306221,False,4,,False,0
+1041,sub-TE17053/ses-202308311,False,5,no notable issues,False,0
+1042,sub-TE18596/ses-202307251,False,4,,False,0
+1052,sub-WU01590/ses-202212011,False,3,moderate ringing ,True,1
+1053,sub-WU01590/ses-202209201,False,4,,False,0
+1054,sub-WU04342/ses-202212191,False,3,motion throughout,True,1
+1055,sub-WU04342/ses-202210101,False,4,No notable isssues,False,0
+1056,sub-WU04908/ses-202209271,False,4,,False,0
+1058,sub-WU06851/ses-202210181,False,4,"not perfectly aligned, image quality great",False,0
+1059,sub-WU06851/ses-202212191,False,4,slight ringing but not significant,True,1
+1060,sub-WU08865/ses-202212201,False,3,ringing throughout but not major (run-2_T1w),True,1
+1061,sub-WU08865/ses-202210271,False,4,,False,0
+1062,sub-WU09114/ses-202301101,False,4,,False,0
+1063,sub-WU09114/ses-202306161,False,4,"lots of artifacts outside of the skull, odd but doesn't affect brain",False,0
+1064,sub-WU09592/ses-202212131,False,4,No notable issues,False,0
+1065,sub-WU09592/ses-202303301,False,4,,False,0
+1066,sub-WU10549/ses-202304051,False,4,,False,0
+1067,sub-WU11737/ses-202306291,False,4,no notable issues,False,0
+1071,sub-WU14773/ses-202308241,False,4,No issues ,False,0
+1075,sub-YA00926/ses-202211031,False,4,,False,0
+1076,sub-YA00926/ses-202301241,False,4,,False,0
+1077,sub-YA01508/ses-202206231,False,4,,False,0
+1078,sub-YA01508/ses-202208261,False,4,,False,0
+1079,sub-YA03473/ses-202209011,False,3,ringing of frontal lobe towards temporal lobe on left hemi,True,1
+1080,sub-YA03473/ses-202211281,False,3,ringing in frontal lobe,True,1
+1081,sub-YA04611/ses-202209291,False,4,No notable issues,False,0
+1082,sub-YA04611/ses-202211211,False,4,,False,0
+1083,sub-YA05293/ses-202212051,False,3,Notable ringing in all views,True,1
+1084,sub-YA05293/ses-202209261,False,4,,False,0
+1085,sub-YA06869/ses-202211111,False,4,,False,0
+1086,sub-YA06869/ses-202301261,False,4,,False,0
+1087,sub-YA08106/ses-202307261,False,3,"grainy, minor ringing",True,1
+1088,sub-YA08106/ses-202305171,False,4,No notable issues,False,0
+1090,sub-YA08362/ses-202210131,False,3,"ringing, skull slightly misshapen",True,1
+1091,sub-YA09994/ses-202301191,False,4,no notable issues ,False,0
+1092,sub-YA11278/ses-202301261,False,4,,False,0
+1093,sub-YA11278/ses-202303301,False,4,,False,0
+1094,sub-YA13632/ses-202304051,False,3,mild to moderate ringing,True,1
+1095,sub-YA13632/ses-202302071,False,4,,False,0
+1096,sub-YA15624/ses-202305191,False,3,mild ringing,True,1
+1097,sub-YA15624/ses-202302161,False,4,,False,0
+1098,sub-YA16301/ses-202302091,False,4,no notable issues ,False,0
+1099,sub-YA16301/ses-202304111,False,4,no notable issues,False,0
+1101,sub-YA16606/ses-202303281,False,4,no notable issues ,False,0
+1102,sub-YA16945/ses-202303151,False,3,slight ringing,True,1
+1103,sub-YA16945/ses-202305241,False,3,"scan is good, cyst in cerebellum may disrupt volume measurements",False,0
+1104,sub-YA17472/ses-202303311,False,3,ringing throughout,True,1
+1105,sub-YA17816/ses-202305041,False,3,moderate ringing,True,1
+1106,sub-YA17816/ses-202307121,False,3,Minor ringing,True,1
+1107,sub-YA18404/ses-202308241,False,4,minor ghosting that doesn't affect brain (axial view),False,0
+1108,sub-YA20433/ses-202307181,False,4,no notable issues,False,0
+1110,sub-YA20449/ses-202307051,False,4,negligible ghosting at eyes,False,0
+1113,sub-YA20849/ses-202308041,False,3,ringing,True,1
+1115,sub-YA23168/ses-202308211,False,4,,False,0
+1117,sub-YA23568/ses-202308311,False,3,Minor ringing,True,1
+1119,sub-YA24934/ses-202308281,False,4,,False,0
+1120,sub-YA25683/ses-202308291,False,4,No notable issues,False,0

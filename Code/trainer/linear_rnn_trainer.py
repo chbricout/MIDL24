@@ -10,11 +10,17 @@ from monai.transforms import (
  
 )
 import torch
+import torch.nn as nn
 import lightning
 from comet_ml.integration.pytorch import log_model
 from neuro_ix.vae.vae_config import VAETrainConfig
-from neuro_ix.models.rnn_cnn_linear import RNNCNN 
+from neuro_ix.models.rnn_cnn_smart import RNNCNN 
 from lightning.pytorch.callbacks.early_stopping import EarlyStopping
+
+def init_weights(m):
+    if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
+        torch.nn.init.xavier_uniform_(m.weight)
+        m.bias.data.fill_(0.01)
 
 def launch_train(config:VAETrainConfig):
     train_ds = CacheDataset(data=config.train_path, transform=config.transform, num_workers=10)
@@ -50,6 +56,7 @@ def launch_train(config:VAETrainConfig):
         use_decoder=config.use_decoder
 
     )
+    res_enc.apply(init_weights)
 
     comet_logger = lightning.pytorch.loggers.CometLogger(
         api_key="WmA69YL7Rj2AfKqwILBjhJM3k", project_name="class-ae"

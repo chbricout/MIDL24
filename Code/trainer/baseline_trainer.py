@@ -2,9 +2,14 @@ import logging
 import sys
 sys.path.append(".")
 import comet_ml
-from monai.data import CacheDataset, DataLoader, ZipDataset
-
+from monai.data import CacheDataset, DataLoader, ZipDataset, Dataset
+from monai.transforms import (
+    RandFlip,
+    RandRotate,
+    Compose,
+)
 import torch
+import torch.nn as nn
 import lightning
 from comet_ml.integration.pytorch import log_model
 
@@ -12,6 +17,10 @@ from neuro_ix.vae.vae_config import VAETrainConfig
 from neuro_ix.models.baseline import BaselineModel 
 from lightning.pytorch.callbacks.early_stopping import EarlyStopping
 
+def init_weights(m):
+    if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
+        torch.nn.init.xavier_uniform_(m.weight)
+        m.bias.data.fill_(0.01)
 
 def launch_train(config):
     train_ds = CacheDataset(data=config.train_path, transform=config.transform, num_workers=10)
@@ -43,6 +52,7 @@ def launch_train(config):
         lr=config.learning_rate,
         use_decoder=config.use_decoder
     )
+    base_enc.apply(init_weights)
 
     name = "Baseline"
     if not config.use_decoder:
@@ -57,7 +67,7 @@ def launch_train(config):
         accelerator="gpu",
         default_root_dir=config.run_dir,
         log_every_n_steps=10,
-        callbacks=[EarlyStopping(monitor="val_label_loss", mode="min", patience=50)]
+        callbacks=[EarlyStopping(monitor="val_accuracy", mode="max", patience=50)]
 
     )
     trainer.fit(base_enc, train_dataloaders=train_loader, val_dataloaders=val_loader)
