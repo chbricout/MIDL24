@@ -123,6 +123,7 @@ class ResEncoderDense(nn.Module):
             padding=kernel_size // 2,
             norm="BATCH",
         )
+        
 
     def forward(self, x):
         inp = self.input(x)
@@ -208,6 +209,7 @@ class RNNCNN(lightning.LightningModule):
 
         self.label = []
         self.classe = []
+        self.save_hyperparameters()
 
     def encode_forward(self, input):
         z = self.encoder(input)

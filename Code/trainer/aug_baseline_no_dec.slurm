@@ -21,6 +21,6 @@ export MKL_NUM_THREADS=1
 # Activate bowl virtual environment
 source ~/bowl/bin/activate
 
-srun python trainer/augmented_trainer.py --raw_images --max_epochs 1000 --learning_rate 1e-5 --batch_train 20 --beta 0.01
+srun python trainer/augmented_trainer.py --raw_images --max_epochs 1000 --learning_rate 1e-5 --batch_train 20 --beta 1
 # Deactivate the virtual environment
 deactivate

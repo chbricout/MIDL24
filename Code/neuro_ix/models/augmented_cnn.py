@@ -144,7 +144,7 @@ class AugBaselineModel(lightning.LightningModule):
             self.lr = self.lr*self.beta ## mimick the scaled loss in the learning rate
 
         self.classifier = nn.Sequential(
-            nn.Dropout(0.2),
+            nn.Dropout(0.5),
 
             nn.Linear(self.latent_size, 450),
             nn.BatchNorm1d(450, affine=False),
@@ -170,6 +170,7 @@ class AugBaselineModel(lightning.LightningModule):
 
         self.label=[]
         self.classe=[]
+        self.save_hyperparameters()
 
     def encode_forward(self, input):
         z =self.encoder(input)

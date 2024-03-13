@@ -159,6 +159,7 @@ class BaselineModel(lightning.LightningModule):
 
         self.label=[]
         self.classe=[]
+        self.save_hyperparameters()
         
 
     def encode_forward(self, input):

@@ -16,11 +16,12 @@ from comet_ml.integration.pytorch import log_model
 from neuro_ix.vae.vae_config import VAETrainConfig
 from neuro_ix.models.rnn_cnn_smart import RNNCNN 
 from lightning.pytorch.callbacks.early_stopping import EarlyStopping
+from lightning.pytorch.callbacks.model_checkpoint import ModelCheckpoint
 
 def init_weights(m):
     if isinstance(m, nn.Linear) or isinstance(m, nn.Conv3d):
         torch.nn.init.xavier_uniform_(m.weight)
-        m.bias.data.fill_(0.01)
+        m.bias.data.fill_(0)
 
 def launch_train(config:VAETrainConfig):
     train_ds = CacheDataset(data=config.train_path, transform=config.transform, num_workers=10)
@@ -61,6 +62,8 @@ def launch_train(config:VAETrainConfig):
     comet_logger = lightning.pytorch.loggers.CometLogger(
         api_key="WmA69YL7Rj2AfKqwILBjhJM3k", project_name="class-ae"
     )
+    check = ModelCheckpoint(monitor="val_accuracy", mode="max")
+
     trainer = lightning.Trainer(
         max_epochs=config.max_epochs,
         logger=comet_logger,
@@ -68,13 +71,13 @@ def launch_train(config:VAETrainConfig):
         accelerator="gpu",
         default_root_dir=config.run_dir,
         log_every_n_steps=10,
-        callbacks=[EarlyStopping(monitor="val_label_loss", mode="min", patience=50)]
+        callbacks=[EarlyStopping(monitor="val_accuracy", mode="max", patience=50),check]
     )
     trainer.fit(res_enc, train_dataloaders=train_loader, val_dataloaders=val_loader)
     name = "RNN"
     if not config.use_decoder:
         name += "-NoDec"
-    log_model(comet_logger.experiment, res_enc, name)
+    log_model(comet_logger.experiment, RNNCNN.load_from_checkpoint(check.best_model_path), name)
 
 
 if __name__ == "__main__":
