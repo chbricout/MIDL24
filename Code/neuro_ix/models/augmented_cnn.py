@@ -21,33 +21,18 @@ class ConvModule(nn.Module):
         self.key = f"{in_channel}-{out_channel}"
         if padding == None:
             padding = conv_kernel // 2
-
-        self.conv_in = Convolution(
-            spatial_dims=3,
-            in_channels=in_channel,
-            out_channels=out_channel,
-            kernel_size=conv_kernel,
-            padding=padding,
-            strides=stride,
-            norm="BATCH",
-            act=act,
+        self.convs = nn.Sequential(
+            nn.Conv3d(in_channels=in_channel, out_channels=out_channel, kernel_size=conv_kernel, padding=padding, stride=stride),
+            nn.BatchNorm3d(out_channel),
+            nn.PReLU(),
+            nn.Conv3d(in_channels=out_channel, out_channels=out_channel, kernel_size=conv_kernel, padding=padding, stride=1),
+            nn.BatchNorm3d(out_channel),
+            nn.PReLU()
         )
-        self.conv_mid = Convolution(
-            spatial_dims=3,
-            in_channels=out_channel,
-            out_channels=out_channel,
-            kernel_size=conv_kernel,
-            strides=1,
-            padding=conv_kernel // 2,
-            norm="BATCH",
-            act=act,
-        )
+        
 
     def forward(self, x):
-        y = self.conv_in(x)
-        y = self.conv_mid(y)
-
-        return y
+        return self.convs(x)
 
 
 class DeConvModule(nn.Module):
@@ -63,34 +48,20 @@ class DeConvModule(nn.Module):
         super().__init__()
         if padding == None:
             padding = conv_kernel // 2
-
-
-        self.deconv_in = Convolution(
-            spatial_dims=3,
-            in_channels=in_channel,
-            out_channels=out_channel,
-            kernel_size=conv_kernel,
-            strides=stride,
-            padding=padding,
-            is_transposed=True,
-            norm="BATCH",
-            act=act,
+        self.convs = nn.Sequential(
+            nn.ConvTranspose3d(in_channels=in_channel, out_channels=out_channel, kernel_size=conv_kernel, padding=padding, stride=stride, output_padding=1),
+            nn.BatchNorm3d(out_channel),
+            nn.PReLU(),
+            nn.Conv3d(in_channels=out_channel, out_channels=out_channel, kernel_size=conv_kernel, padding=padding, stride=1),
+            nn.BatchNorm3d(out_channel),
+            nn.PReLU()
         )
-        self.deconv_mid = Convolution(
-            spatial_dims=3,
-            in_channels=out_channel,
-            out_channels=out_channel,
-            kernel_size=conv_kernel,
-            norm="BATCH",
-            strides=1,
-            padding=conv_kernel // 2,
-            act=act,
-        )
+
+        
 
     def forward(self, x):
-        y = self.deconv_in(x)
-        y = self.deconv_mid(y)
-        return y
+        return self.convs(x)
+
 
 
 
@@ -234,6 +205,8 @@ class AugBaselineModel(lightning.LightningModule):
 
 
     def on_validation_epoch_end(self) -> None:
+        print(self.classe)
+        print(self.label)
         self.logger.experiment.log_confusion_matrix(self.label, self.classe, epoch=self.current_epoch)
         classe = torch.Tensor(self.classe)
         lab =  torch.Tensor(self.label)
